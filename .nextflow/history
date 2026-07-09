@@ -1,7 +1,0 @@
-2026-07-07 17:05:42	23.7s	agitated_miescher	ERR	5992072d3c2845df5fbe01ec3761cf20	16c35fa4-6457-414a-a51b-d66e42648035	nextflow run main.nf
-2026-07-07 17:08:01	14m 44s	boring_bartik	OK	5992072d3c2845df5fbe01ec3761cf20	d589c8ff-e7ab-4592-a029-fce3185f3991	nextflow run main.nf
-2026-07-07 18:05:47	2.4s	golden_lavoisier	OK	46718468a25ce32bf39018b4c125870a	6271f1e0-1542-4d55-b7c8-dcbb51e66b34	nextflow run main.nf
-2026-07-07 18:07:14	1.9s	nice_monod	OK	aab1314a367556c0a3e2efc11f25eee9	a348a5e5-6331-4699-95bb-cbe1b8004a81	nextflow run main.nf
-2026-07-07 18:11:30	13m 46s	naughty_blackwell	OK	74550c70e76327b11ee9646ca74d44e4	a9c7f8b1-1643-4234-bed0-393fb25b366a	nextflow run main.nf
-2026-07-09 11:57:56	12m 2s	romantic_darwin	ERR	74550c70e76327b11ee9646ca74d44e4	b37db17f-03c5-4f93-bd86-e28749be1310	nextflow run main.nf
-2026-07-09 12:10:40	7m	desperate_volta	OK	74550c70e76327b11ee9646ca74d44e4	b37db17f-03c5-4f93-bd86-e28749be1310	nextflow run main.nf -resume
