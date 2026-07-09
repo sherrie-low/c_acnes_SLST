@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl= 2 
 
-rawreads_Ch = Channel.fromFilePairs('/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/*_{1,2}.fastq',flat: true)
+rawreads_Ch = Channel.fromFilePairs('/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/*_{1,2}.fastq',flat: true)
                                                 .view()
 
 include {MERGE} from './merge.nf'

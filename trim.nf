@@ -3,8 +3,6 @@
 process TRIM{
 tag "$sample"
 
-publishDir 'results/trimmed_reads',mode: 'copy', pattern:'*_trimmed.fastq'
-publishDir 'results/trim_stats',mode:'copy', pattern:'*_trim_stats.txt'
 
 
 output: 
@@ -31,4 +29,5 @@ trimmed_count=\$(awk 'END {print NR/4}' ${sample}_trimmed.fastq)
     echo "" >> ${sample}_trim_stats.txt
 """
 }
+
 

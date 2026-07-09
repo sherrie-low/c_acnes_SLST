@@ -1,0 +1,338 @@
+Jul-09 11:57:54.862 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: ProxyConfig[protocol=http; host=proxy0-68716dd7ae5fc6caf44bda2b70c867e8.menlosecurity.com; port=3131]
+Jul-09 11:57:54.942 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: ProxyConfig[protocol=http; host=proxy0-68716dd7ae5fc6caf44bda2b70c867e8.menlosecurity.com; port=3131]
+Jul-09 11:57:54.944 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jul-09 11:57:55.056 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.2
+Jul-09 11:57:55.109 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/lowqrs/.nextflow/plugins; core-plugins: nf-amazon@3.4.2,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.3,nf-k8s@1.2.2,nf-tower@1.17.3,nf-wave@1.16.1
+Jul-09 11:57:55.165 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-09 11:57:55.169 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-09 11:57:55.173 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-09 11:57:55.196 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jul-09 11:57:55.476 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-09 11:57:55.514 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/nextflow.config
+Jul-09 11:57:55.518 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/nextflow.config
+Jul-09 11:57:55.554 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-09 11:57:56.332 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-09 11:57:56.333 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-09 11:57:56.368 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/lowqrs/.nextflow/secrets/store.json
+Jul-09 11:57:56.373 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@62d1dc3c] - activable => nextflow.secret.LocalSecretsProvider@62d1dc3c
+Jul-09 11:57:56.396 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-09 11:57:56.423 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [romantic_darwin] DSL2 - revision: 74550c70e7
+Jul-09 11:57:56.519 [main] DEBUG nextflow.Session - Session UUID: b37db17f-03c5-4f93-bd86-e28749be1310
+Jul-09 11:57:56.520 [main] DEBUG nextflow.Session - Run name: romantic_darwin
+Jul-09 11:57:56.521 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-09 11:57:56.548 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-09 11:57:56.556 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-09 11:57:56.602 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.2 build 10555
+  Created: 28-11-2025 19:24 UTC (29-11-2025 03:24 GMT+08:20)
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 1309@GIS-SPL-87FJY93 [127.0.1.1]
+  CPUs: 8 - Mem: 15.5 GB (14.6 GB) - Swap: 4 GB (4 GB)
+Jul-09 11:57:56.651 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work [v9fs]
+Jul-09 11:57:56.653 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/bin
+Jul-09 11:57:56.666 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-09 11:57:56.681 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-09 11:57:56.686 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jul-09 11:57:56.747 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-09 11:57:56.765 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-09 11:57:56.952 [main] DEBUG nextflow.Session - Session start
+Jul-09 11:57:57.199 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-09 11:57:57.921 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MERGE` matches process MERGE
+Jul-09 11:57:57.943 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-09 11:57:57.945 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-09 11:57:57.972 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-09 11:57:57.987 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-09 11:57:57.993 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-09 11:57:58.026 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MERGE': maxForks=0; fair=false; array=0
+Jul-09 11:57:58.083 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:TRIM` matches process TRIM
+Jul-09 11:57:58.087 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-09 11:57:58.088 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-09 11:57:58.091 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIM': maxForks=0; fair=false; array=0
+Jul-09 11:57:58.106 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QUALITY` matches process QUALITY
+Jul-09 11:57:58.111 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-09 11:57:58.112 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-09 11:57:58.114 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QUALITY': maxForks=0; fair=false; array=0
+Jul-09 11:57:58.125 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CLUSTER` matches process CLUSTER
+Jul-09 11:57:58.128 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-09 11:57:58.129 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-09 11:57:58.131 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'CLUSTER': maxForks=0; fair=false; array=0
+Jul-09 11:57:58.156 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PARSE` matches process PARSE
+Jul-09 11:57:58.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-09 11:57:58.163 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-09 11:57:58.165 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PARSE': maxForks=0; fair=false; array=0
+Jul-09 11:57:58.168 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [1]
+Jul-09 11:57:58.190 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: QUALITY, MERGE, TRIM, PARSE, CLUSTER
+Jul-09 11:57:58.196 [main] DEBUG nextflow.Session - Igniting dataflow network (8)
+Jul-09 11:57:58.207 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/; pattern: *_{1,2}.fastq; options: [:]
+Jul-09 11:57:58.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MERGE
+Jul-09 11:57:58.211 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIM
+Jul-09 11:57:58.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QUALITY
+Jul-09 11:57:58.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CLUSTER
+Jul-09 11:57:58.218 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE
+Jul-09 11:57:58.220 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE
+Jul-09 11:57:58.221 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_148d5e6eacf39df2: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/parse.nf
+  Script_8a33f02e938ddcd7: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/main.nf
+  Script_b0effa3d31bf959d: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/quality.nf
+  Script_1ce0153c7baf0c31: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/trim.nf
+  Script_3282d974913a5573: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/cluster.nf
+  Script_96e9facf320ff8fa: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/merge.nf
+Jul-09 11:57:58.222 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-09 11:57:58.223 [main] DEBUG nextflow.Session - Session await
+Jul-09 11:57:58.549 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.553 [Task submitter] INFO  nextflow.Session - [0d/5dcecd] Submitted process > MERGE (SRR17480249)
+Jul-09 11:57:58.581 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.583 [Task submitter] INFO  nextflow.Session - [cf/75471d] Submitted process > MERGE (SRR17480244)
+Jul-09 11:57:58.625 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.628 [Task submitter] INFO  nextflow.Session - [2e/e957ca] Submitted process > MERGE (SRR17480208)
+Jul-09 11:57:58.660 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.663 [Task submitter] INFO  nextflow.Session - [95/e2008d] Submitted process > MERGE (SRR17480201)
+Jul-09 11:57:58.697 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.703 [Task submitter] INFO  nextflow.Session - [d5/505a26] Submitted process > MERGE (SRR17480194)
+Jul-09 11:57:58.757 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.760 [Task submitter] INFO  nextflow.Session - [e8/1786b7] Submitted process > MERGE (SRR17480193)
+Jul-09 11:57:58.816 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.822 [Task submitter] INFO  nextflow.Session - [47/248370] Submitted process > MERGE (SRR17480190)
+Jul-09 11:57:58.872 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:57:58.874 [Task submitter] INFO  nextflow.Session - [6a/a5d1db] Submitted process > MERGE (SRR17480253)
+Jul-09 11:58:24.299 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: MERGE (SRR17480249); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/0d/5dcecd82d0dc93d360e6104a10b977]
+Jul-09 11:58:24.303 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-09 11:58:24.367 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:24.370 [Task submitter] INFO  nextflow.Session - [e2/c5d7f7] Submitted process > MERGE (SRR17480284)
+Jul-09 11:58:24.456 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-09 11:58:29.917 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: MERGE (SRR17480208); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/2e/e957cad06e9528d7c619e9ded39e3f]
+Jul-09 11:58:29.963 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:29.966 [Task submitter] INFO  nextflow.Session - [85/b47ee1] Submitted process > MERGE (SRR17480291)
+Jul-09 11:58:30.682 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: MERGE (SRR17480201); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/95/e2008d2a35ef93213ceae91377a21f]
+Jul-09 11:58:30.747 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:30.749 [Task submitter] INFO  nextflow.Session - [d9/901861] Submitted process > MERGE (SRR17480283)
+Jul-09 11:58:32.756 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: MERGE (SRR17480194); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d5/505a26b56eb1cc05a3d95cce03a577]
+Jul-09 11:58:32.804 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:32.806 [Task submitter] INFO  nextflow.Session - [a9/093a5c] Submitted process > MERGE (SRR17480292)
+Jul-09 11:58:33.784 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: MERGE (SRR17480193); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/e8/1786b7f4d837ebf79e8a18d75e7a3c]
+Jul-09 11:58:33.836 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:33.838 [Task submitter] INFO  nextflow.Session - [5d/8dc5a0] Submitted process > MERGE (SRR17480296)
+Jul-09 11:58:36.163 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: MERGE (SRR17480190); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/47/2483706b0deb17c908b7874e18798a]
+Jul-09 11:58:36.213 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:36.215 [Task submitter] INFO  nextflow.Session - [2b/066e83] Submitted process > TRIM (SRR17480249)
+Jul-09 11:58:38.914 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: MERGE (SRR17480253); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/6a/a5d1db4b1ec7df27279d8842290f41]
+Jul-09 11:58:38.964 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:38.966 [Task submitter] INFO  nextflow.Session - [80/5df9ce] Submitted process > TRIM (SRR17480208)
+Jul-09 11:58:40.805 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: MERGE (SRR17480291); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/85/b47ee179d7ff8ce7d983e2e0092d0f]
+Jul-09 11:58:40.847 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:40.853 [Task submitter] INFO  nextflow.Session - [c0/c79665] Submitted process > TRIM (SRR17480201)
+Jul-09 11:58:45.335 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: MERGE (SRR17480244); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/cf/75471ddfa51f7898717f04e73e203f]
+Jul-09 11:58:45.369 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:45.371 [Task submitter] INFO  nextflow.Session - [6e/ef5389] Submitted process > TRIM (SRR17480194)
+Jul-09 11:58:45.821 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: MERGE (SRR17480284); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/e2/c5d7f78913e12385a80e130fb8edc1]
+Jul-09 11:58:47.787 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: MERGE (SRR17480283); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d9/901861fbc6b1af4abcc4cdc20feb23]
+Jul-09 11:58:48.410 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: MERGE (SRR17480292); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/a9/093a5c3417523e4c6cf37585bf30ba]
+Jul-09 11:58:59.744 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: TRIM (SRR17480249); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/2b/066e8357743aaebc4ddc29d0654a5c]
+Jul-09 11:58:59.771 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:58:59.772 [Task submitter] INFO  nextflow.Session - [5b/97c351] Submitted process > TRIM (SRR17480193)
+Jul-09 11:59:02.958 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: MERGE (SRR17480296); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/5d/8dc5a043e1011c45838cf2a7811821]
+Jul-09 11:59:04.076 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: TRIM (SRR17480208); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/80/5df9ce0ea6b5f7f43f3f613a239d82]
+Jul-09 11:59:04.113 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:04.121 [Task submitter] INFO  nextflow.Session - [11/7aaafb] Submitted process > TRIM (SRR17480190)
+Jul-09 11:59:06.781 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: TRIM (SRR17480201); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/c0/c7966570a86799f4e9554fabd44080]
+Jul-09 11:59:06.865 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:06.867 [Task submitter] INFO  nextflow.Session - [d0/5b2c4c] Submitted process > TRIM (SRR17480253)
+Jul-09 11:59:10.916 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: TRIM (SRR17480194); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/6e/ef5389e7b7ce04e263b1e6a4f176ab]
+Jul-09 11:59:10.942 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:10.943 [Task submitter] INFO  nextflow.Session - [75/6bba1b] Submitted process > TRIM (SRR17480291)
+Jul-09 11:59:20.088 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: TRIM (SRR17480291); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/75/6bba1b8c2813ce8ed0ab1765e64f10]
+Jul-09 11:59:20.112 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:20.112 [Task submitter] INFO  nextflow.Session - [98/96636f] Submitted process > TRIM (SRR17480244)
+Jul-09 11:59:21.452 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: TRIM (SRR17480193); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/5b/97c351e9f2323a762e5863184a59ab]
+Jul-09 11:59:21.475 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:21.476 [Task submitter] INFO  nextflow.Session - [c5/a63698] Submitted process > TRIM (SRR17480284)
+Jul-09 11:59:27.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: TRIM (SRR17480190); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/11/7aaafb966e34c2382e1eaa25609983]
+Jul-09 11:59:27.483 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:27.484 [Task submitter] INFO  nextflow.Session - [7b/fb9f62] Submitted process > TRIM (SRR17480283)
+Jul-09 11:59:31.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: TRIM (SRR17480253); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d0/5b2c4ce0572ccd01c815519e66d282]
+Jul-09 11:59:31.885 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:31.887 [Task submitter] INFO  nextflow.Session - [52/92a06b] Submitted process > TRIM (SRR17480292)
+Jul-09 11:59:40.844 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: TRIM (SRR17480284); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/c5/a636981e2ce5d10b3b46985128457d]
+Jul-09 11:59:40.872 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:40.873 [Task submitter] INFO  nextflow.Session - [8f/a357a7] Submitted process > QUALITY (SRR17480249)
+Jul-09 11:59:44.819 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: TRIM (SRR17480283); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/7b/fb9f6260b1370f46676e26ab98c388]
+Jul-09 11:59:44.842 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:44.843 [Task submitter] INFO  nextflow.Session - [3f/386bd2] Submitted process > TRIM (SRR17480296)
+Jul-09 11:59:47.754 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: TRIM (SRR17480292); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/52/92a06ba2812fe8fae7c3c20e40b93c]
+Jul-09 11:59:47.781 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:47.783 [Task submitter] INFO  nextflow.Session - [d0/95ae96] Submitted process > QUALITY (SRR17480208)
+Jul-09 11:59:51.494 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: TRIM (SRR17480244); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/98/96636f4960e9c0756c45e784d636c3]
+Jul-09 11:59:51.549 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 11:59:51.551 [Task submitter] INFO  nextflow.Session - [92/c29dbd] Submitted process > QUALITY (SRR17480201)
+Jul-09 12:00:22.592 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: TRIM (SRR17480296); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/3f/386bd2481653de61c96af3a54e7d32]
+Jul-09 12:00:22.625 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:00:22.626 [Task submitter] INFO  nextflow.Session - [a1/607da0] Submitted process > QUALITY (SRR17480194)
+Jul-09 12:01:05.755 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: QUALITY (SRR17480249); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8f/a357a7ab8ef6716e43a0ad5da8a0f4]
+Jul-09 12:01:05.788 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:01:05.793 [Task submitter] INFO  nextflow.Session - [6c/277ca8] Submitted process > QUALITY (SRR17480291)
+Jul-09 12:01:47.526 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: QUALITY (SRR17480208); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d0/95ae9653d40ec8c6d3aa31eb7ce752]
+Jul-09 12:01:47.560 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:01:47.561 [Task submitter] INFO  nextflow.Session - [3d/fd65d6] Submitted process > QUALITY (SRR17480193)
+Jul-09 12:01:53.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: QUALITY (SRR17480201); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/92/c29dbd3ff20a66961af4d4f5e764af]
+Jul-09 12:01:53.881 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:01:53.884 [Task submitter] INFO  nextflow.Session - [24/c43f3f] Submitted process > QUALITY (SRR17480190)
+Jul-09 12:02:25.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: QUALITY (SRR17480291); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/6c/277ca890ab3646bf2cf34b735b8863]
+Jul-09 12:02:25.921 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:02:25.923 [Task submitter] INFO  nextflow.Session - [4e/b876c2] Submitted process > QUALITY (SRR17480253)
+Jul-09 12:02:40.752 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: QUALITY (SRR17480194); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/a1/607da0bad3e6dc3b4b466c5b16976b]
+Jul-09 12:02:40.856 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:02:40.859 [Task submitter] INFO  nextflow.Session - [8f/3db5cb] Submitted process > QUALITY (SRR17480284)
+Jul-09 12:02:58.196 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[id: 32; name: QUALITY (SRR17480193); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/3d/fd65d6369170e45655c7d03adfc898]
+~> TaskHandler[id: 33; name: QUALITY (SRR17480190); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/24/c43f3fac5ab4f542fb4a1fc7d77129]
+~> TaskHandler[id: 34; name: QUALITY (SRR17480253); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/4e/b876c2bb071deff212f35ea719cb8d]
+~> TaskHandler[id: 35; name: QUALITY (SRR17480284); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8f/3db5cbb750660673b5ed44f2bca9a0]
+Jul-09 12:02:59.876 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 9 -- tasks to be submitted are shown below
+~> TaskHandler[id: 36; name: QUALITY (SRR17480283); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/13/b3f7fdcb551496ef04e177ca20ba5a]
+~> TaskHandler[id: 37; name: QUALITY (SRR17480292); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/53/51dd58196ca68c33ee3609eca27d69]
+~> TaskHandler[id: 38; name: QUALITY (SRR17480244); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9e/0e269b5a16b5883b771bee2d14d6de]
+~> TaskHandler[id: 39; name: QUALITY (SRR17480296); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8f/a6fbb8d1226f513d107124e38b90ff]
+~> TaskHandler[id: 40; name: CLUSTER (SRR17480249); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/48/3599eeb70e80f0a5a0b0a58d37cd90]
+~> TaskHandler[id: 41; name: CLUSTER (SRR17480208); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/1c/2502f117ab2efeede973d40e125242]
+~> TaskHandler[id: 42; name: CLUSTER (SRR17480201); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/dd/874996cd18fd996f943351d272084b]
+~> TaskHandler[id: 43; name: CLUSTER (SRR17480291); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8b/a30e4285ef60c11286a316827364c2]
+~> TaskHandler[id: 44; name: CLUSTER (SRR17480194); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/64/ea148520ffa379a02d94d54542d9af]
+Jul-09 12:03:50.869 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: QUALITY (SRR17480193); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/3d/fd65d6369170e45655c7d03adfc898]
+Jul-09 12:03:50.900 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:03:50.901 [Task submitter] INFO  nextflow.Session - [13/b3f7fd] Submitted process > QUALITY (SRR17480283)
+Jul-09 12:04:10.873 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: QUALITY (SRR17480190); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/24/c43f3fac5ab4f542fb4a1fc7d77129]
+Jul-09 12:04:10.899 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:04:10.901 [Task submitter] INFO  nextflow.Session - [53/51dd58] Submitted process > QUALITY (SRR17480292)
+Jul-09 12:04:30.023 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: QUALITY (SRR17480284); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8f/3db5cbb750660673b5ed44f2bca9a0]
+Jul-09 12:04:30.060 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:04:30.061 [Task submitter] INFO  nextflow.Session - [9e/0e269b] Submitted process > QUALITY (SRR17480244)
+Jul-09 12:04:51.026 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: QUALITY (SRR17480253); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/4e/b876c2bb071deff212f35ea719cb8d]
+Jul-09 12:04:51.047 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:04:51.048 [Task submitter] INFO  nextflow.Session - [8f/a6fbb8] Submitted process > QUALITY (SRR17480296)
+Jul-09 12:05:33.360 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: QUALITY (SRR17480283); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/13/b3f7fdcb551496ef04e177ca20ba5a]
+Jul-09 12:05:33.398 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:05:33.399 [Task submitter] INFO  nextflow.Session - [48/3599ee] Submitted process > CLUSTER (SRR17480249)
+Jul-09 12:05:56.286 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: QUALITY (SRR17480292); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/53/51dd58196ca68c33ee3609eca27d69]
+Jul-09 12:05:56.319 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:05:56.322 [Task submitter] INFO  nextflow.Session - [1c/2502f1] Submitted process > CLUSTER (SRR17480208)
+Jul-09 12:06:11.974 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: CLUSTER (SRR17480249); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/48/3599eeb70e80f0a5a0b0a58d37cd90]
+Jul-09 12:06:12.001 [TaskFinalizer-8] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480249)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/48/3599eeb70e80f0a5a0b0a58d37cd90/SRR17480249_unclustered.fasta` (pattern: `SRR17480249_unclustered.fasta`)
+Jul-09 12:06:12.014 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:06:12.015 [Task submitter] INFO  nextflow.Session - [dd/874996] Submitted process > CLUSTER (SRR17480201)
+Jul-09 12:06:12.516 [TaskFinalizer-8] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:06:51.970 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: CLUSTER (SRR17480208); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/1c/2502f117ab2efeede973d40e125242]
+Jul-09 12:06:51.991 [TaskFinalizer-9] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480208)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/1c/2502f117ab2efeede973d40e125242/SRR17480208_unclustered.fasta` (pattern: `SRR17480208_unclustered.fasta`)
+Jul-09 12:06:52.011 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:06:52.023 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:06:52.026 [Task submitter] INFO  nextflow.Session - [8b/a30e42] Submitted process > CLUSTER (SRR17480291)
+Jul-09 12:07:09.346 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: CLUSTER (SRR17480201); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/dd/874996cd18fd996f943351d272084b]
+Jul-09 12:07:09.379 [TaskFinalizer-10] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480201)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/dd/874996cd18fd996f943351d272084b/SRR17480201_unclustered.fasta` (pattern: `SRR17480201_unclustered.fasta`)
+Jul-09 12:07:09.398 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:07:09.404 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:07:09.408 [Task submitter] INFO  nextflow.Session - [64/ea1485] Submitted process > CLUSTER (SRR17480194)
+Jul-09 12:07:19.160 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: CLUSTER (SRR17480291); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8b/a30e4285ef60c11286a316827364c2]
+Jul-09 12:07:19.175 [TaskFinalizer-1] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480291)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8b/a30e4285ef60c11286a316827364c2/SRR17480291_unclustered.fasta` (pattern: `SRR17480291_unclustered.fasta`)
+Jul-09 12:07:19.192 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:07:19.194 [Task submitter] INFO  nextflow.Session - [1b/282212] Submitted process > CLUSTER (SRR17480193)
+Jul-09 12:07:19.200 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:07:58.242 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[id: 38; name: QUALITY (SRR17480244); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9e/0e269b5a16b5883b771bee2d14d6de]
+~> TaskHandler[id: 39; name: QUALITY (SRR17480296); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8f/a6fbb8d1226f513d107124e38b90ff]
+~> TaskHandler[id: 44; name: CLUSTER (SRR17480194); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/64/ea148520ffa379a02d94d54542d9af]
+~> TaskHandler[id: 45; name: CLUSTER (SRR17480193); status: RUNNING; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/1b/2822123e27441d4d214811e59f0052]
+Jul-09 12:08:00.295 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 9 -- tasks to be submitted are shown below
+~> TaskHandler[id: 46; name: CLUSTER (SRR17480190); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/75/c2f64125655a980694aa221876e01c]
+~> TaskHandler[id: 47; name: CLUSTER (SRR17480284); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d6/5d28703e188ee0a8120d5f6f51b408]
+~> TaskHandler[id: 48; name: CLUSTER (SRR17480253); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/7f/a9c262a9549dc203b8cf953cc1620e]
+~> TaskHandler[id: 49; name: CLUSTER (SRR17480283); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/df/d080403e2407cf9d2a7f6fbece83ae]
+~> TaskHandler[id: 50; name: CLUSTER (SRR17480292); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/26/3e48928beedc838b562f16941898da]
+~> TaskHandler[id: 51; name: PARSE (SRR17480249); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9b/fb6385dd9b98558dc2e75a93c4850d]
+~> TaskHandler[id: 52; name: PARSE (SRR17480208); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/64/c953e8f812a842ace80cc1ecdc6903]
+~> TaskHandler[id: 53; name: PARSE (SRR17480201); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/c0/90746b2c4d9cab6b5e2db51fd0a039]
+~> TaskHandler[id: 54; name: PARSE (SRR17480291); status: NEW; exit: -; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/63/2ccc134fcff2793ce0d5698218526f]
+Jul-09 12:08:04.165 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: QUALITY (SRR17480244); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9e/0e269b5a16b5883b771bee2d14d6de]
+Jul-09 12:08:04.210 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:08:04.211 [Task submitter] INFO  nextflow.Session - [75/c2f641] Submitted process > CLUSTER (SRR17480190)
+Jul-09 12:08:08.327 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: CLUSTER (SRR17480194); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/64/ea148520ffa379a02d94d54542d9af]
+Jul-09 12:08:08.357 [TaskFinalizer-3] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480194)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/64/ea148520ffa379a02d94d54542d9af/SRR17480194_unclustered.fasta` (pattern: `SRR17480194_unclustered.fasta`)
+Jul-09 12:08:08.381 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:08:08.384 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:08:08.385 [Task submitter] INFO  nextflow.Session - [d6/5d2870] Submitted process > CLUSTER (SRR17480284)
+Jul-09 12:08:27.219 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: CLUSTER (SRR17480193); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/1b/2822123e27441d4d214811e59f0052]
+Jul-09 12:08:27.234 [TaskFinalizer-4] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480193)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/1b/2822123e27441d4d214811e59f0052/SRR17480193_unclustered.fasta` (pattern: `SRR17480193_unclustered.fasta`)
+Jul-09 12:08:27.261 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:08:27.262 [Task submitter] INFO  nextflow.Session - [7f/a9c262] Submitted process > CLUSTER (SRR17480253)
+Jul-09 12:08:27.267 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:08:42.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: QUALITY (SRR17480296); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/8f/a6fbb8d1226f513d107124e38b90ff]
+Jul-09 12:08:42.950 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:08:42.952 [Task submitter] INFO  nextflow.Session - [df/d08040] Submitted process > CLUSTER (SRR17480283)
+Jul-09 12:09:33.438 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: CLUSTER (SRR17480284); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d6/5d28703e188ee0a8120d5f6f51b408]
+Jul-09 12:09:33.462 [TaskFinalizer-6] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480284)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/d6/5d28703e188ee0a8120d5f6f51b408/SRR17480284_unclustered.fasta` (pattern: `SRR17480284_unclustered.fasta`)
+Jul-09 12:09:33.496 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:09:33.497 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:09:33.498 [Task submitter] INFO  nextflow.Session - [26/3e4892] Submitted process > CLUSTER (SRR17480292)
+Jul-09 12:09:47.624 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: CLUSTER (SRR17480190); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/75/c2f64125655a980694aa221876e01c]
+Jul-09 12:09:47.643 [TaskFinalizer-7] DEBUG n.processor.TaskFileCollector - Process `CLUSTER (SRR17480190)` is unable to find [UnixPath]: `/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/75/c2f64125655a980694aa221876e01c/SRR17480190_unclustered.fasta` (pattern: `SRR17480190_unclustered.fasta`)
+Jul-09 12:09:47.668 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Process CLUSTER > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Jul-09 12:09:47.695 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:09:47.696 [Task submitter] INFO  nextflow.Session - [9b/fb6385] Submitted process > PARSE (SRR17480249)
+Jul-09 12:09:57.004 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: PARSE (SRR17480249); status: COMPLETED; exit: 1; error: -; workDir: /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9b/fb6385dd9b98558dc2e75a93c4850d]
+Jul-09 12:09:57.038 [TaskFinalizer-8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PARSE (SRR17480249); work-dir=/mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9b/fb6385dd9b98558dc2e75a93c4850d
+  error [nextflow.exception.ProcessFailedException]: Process `PARSE (SRR17480249)` terminated with an error exit status (1)
+Jul-09 12:09:57.204 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-09 12:09:57.212 [Task submitter] INFO  nextflow.Session - [64/c953e8] Submitted process > PARSE (SRR17480208)
+Jul-09 12:09:57.303 [TaskFinalizer-8] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PARSE (SRR17480249)'
+
+Caused by:
+  Process `PARSE (SRR17480249)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  vsearch --usearch SRR17480249_clustered.fasta --db C_acnes_SLSTs.fa --id 0.99 --blast6out SRR17480249.hits.b6 --notmatched SRR17480249_nohits.fasta --strand both --log SRR17480249_vsearch.log
+  
+  awk -F ";size=" -v OFS="	" '{print $1,$2}' SRR17480249.hits.b6 > SRR17480249_hits.txt
+  mv SRR17480249_hits.txt SRR17480249_hits.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  vsearch v2.30.4_linux_x86_64, 15.5GB RAM, 8 cores
+  https://github.com/torognes/vsearch
+  
+  Reading file C_acnes_SLSTs.fa 100%
+  109406 nt in 226 seqs, min 483, max 497, avg 484
+  Masking 100%
+  Counting k-mers 100%
+  Creating k-mer index 100%
+  Searching 100%
+  Matching unique query sequences: 722 of 3198 (22.58%)
+  mv: 'SRR17480249_hits.txt' and 'SRR17480249_hits.txt' are the same file
+
+Work dir:
+  /mnt/c/Users/lowqrs/workspace/C_acnes_SLST/nextflow-slst/git_test/c_acnes_SLST/work/9b/fb6385dd9b98558dc2e75a93c4850d
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Jul-09 12:09:57.388 [TaskFinalizer-8] DEBUG nextflow.Session - Session aborted -- Cause: Process `PARSE (SRR17480249)` terminated with an error exit status (1)
+Jul-09 12:09:57.410 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-09 12:09:57.455 [TaskFinalizer-8] DEBUG nextflow.Session - The following nodes are still active:
+[process] PARSE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: __$eachinparam<1>
+  port 2: (cntrl) -     ; channel: $
+
+Jul-09 12:09:57.508 [TaskFinalizer-8] WARN  n.processor.TaskPollingMonitor - Killing running tasks (4)
+Jul-09 12:09:57.832 [TaskFinalizer-8] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=47; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=8; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=4; succeedDuration=1h 29m 48s; failedDuration=18.3s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=9; peakCpus=10; peakMemory=10 GB; ]
+Jul-09 12:09:57.985 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-09 12:09:57.987 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-09 12:09:57.995 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=47; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=8; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=4; succeedDuration=1h 29m 48s; failedDuration=18.3s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=9; peakCpus=10; peakMemory=10 GB; ]
+Jul-09 12:09:58.054 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-09 12:09:58.138 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

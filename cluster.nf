@@ -3,10 +3,6 @@
 process CLUSTER{
 tag "$sample"
 
-publishDir 'results/clustered_reads', mode: 'copy', pattern:'*_clustered.fasta'
-publishDir 'results/unclusterd_reads', mode:'copy', pattern:'*_unclustered.fasta'
-publishDir 'results/cluster_uc', mode:'copy',pattern:'*.uc'
-publishDir 'results/cluster_log', mode:'copy', pattern:'*_cluster.log'
 
 output:
 tuple val(sample), path("${sample}_clustered.fasta"), emit: clustered,optional:true

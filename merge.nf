@@ -5,10 +5,6 @@ process MERGE {
  
 tag "$sample"
 
-publishDir 'results/merged_reads', mode: 'copy', pattern:'*_merged.fastq'
-publishDir 'results/unmerged_reads', mode:'copy', pattern:'*_unmerged_R1.fastq'
-publishDir 'results/unmerged_reads', mode: 'copy', pattern:'*_unmerged_R2.fastq'
-publishDir 'results/merge_logs', mode: 'copy', pattern: '*_merge.log'
 
 output: 
 tuple val(sample), path("${sample}_merged.fastq"), emit:merged, optional: true
